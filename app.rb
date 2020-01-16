@@ -11,3 +11,5 @@ class App < Sinatra::Base
     'Hello world!'
   end
 end
+
+Dir["./app/models/*.rb"].each {|file| require file }
